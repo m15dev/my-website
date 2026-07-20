@@ -4,15 +4,15 @@ body{margin:0; padding: 0; overflow-y: scroll;} /*makes sure theres no border*/
     height: 100%;
     top: 0; left: 0;
     position: fixed;
-    background: url('Background1.jpg')
-    
+    background: url('Background0.jpg') center center / cover no-repeat;
+    z-index: -1;
 }
 
 #main-website {
     width: 100%;
     max-width: 1000px;
 
-    margin: 40px auto;
+    margin: 20px auto;
 
     /*border-left: 1px solid #3d3a3a;
     border-right: 1px solid #3d3a3a;
@@ -22,13 +22,13 @@ body{margin:0; padding: 0; overflow-y: scroll;} /*makes sure theres no border*/
 #main-header {
     backdrop-filter: blur(10px);
 
+
+    
     display: flex;
     justify-content: center;
 
-
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(0, 0, 0);
     border-radius: 70px 70px 0 0;     
-    padding: 20px;
     color: white;
     background: linear-gradient(180deg,rgba(172,172,172,.9) 0,rgba(71,71,71,.9) 20%,rgba(19,19,19,.9) 40%,rgba(7,7,7,.93) 100%);
     
@@ -39,11 +39,57 @@ body{margin:0; padding: 0; overflow-y: scroll;} /*makes sure theres no border*/
 }
 
 #main-content {
-    background-color: #e0e0e0;
-    padding: 40px;
-    height: 900px;
-    border-radius: 0 0 20px 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 0 0 5px 70px;
+    border-right: 1px solid #3d3a3a;
+    border-left: 1px solid #3d3a3a;
+    border-bottom: 2px solid #3d3a3a;
 
-    overflow-y: auto;
-    overflow-x: hidden;
+    min-height: 600px; 
+
+    display: flex; 
+}
+
+.LeftSide-Pannel{
+    background: rgba(21, 20, 20, 0.75);
+    border: 1px solid rgba(120, 160, 120, 0.4);
+    height: auto; width: 200px;
+    border-radius: 5px 5px 5px 60px;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.MainSide-Pannel{
+    background: rgba(21, 20, 20, 0.75);
+    border: 1px solid rgba(120, 160, 120, 0.4);
+    height: auto; width: 100%;
+    border-radius: 5px; 
+}
+
+.menu-pannel{
+    background-color: transparent;
+    border: 1px solid rgba(120, 160, 120, 0.4);
+    border-radius: 5px;
+    margin: auto; padding: 5px;
+    height: 50%; width: 90%;
+}
+
+.menu-pannel-title{
+    background: rgba(21, 20, 20, 0.90);
+    height: 30px; width: 100%;
+    color: white; display: flex;
+    align-items: center; justify-content: center;
+    border-radius: 5px; margin: auto;
+    margin-bottom: 10px;
+}
+
+.menu-pannel-button{
+    background: rgba(21, 20, 20, 0.70);
+    height: 30px; width: 100%;
+    color: white; display: flex;
+    align-items: center; justify-content: center;
+    border-radius: 5px; margin: auto;
+    margin-bottom: 5px;
 }
