@@ -23,13 +23,48 @@
                 <div class="menu-pannel"> 
                     <div class="menu-pannel-title">Main Content</div>
                     <hr>
-                    <button class="menu-pannel-button selected">Projects</button>
-                    <button class="menu-pannel-button">About Me</button>
-                    <button class="menu-pannel-button">Fun Button</button>
+                    <button class="menu-pannel-button selected" onclick="openTab('page-main', this)">Introduction</button>
+                    <button class="menu-pannel-button" onclick="openTab('page-projects', this)">Projects</button>
+                    <button class="menu-pannel-button" onclick="openTab('page-about', this)">About Me</button>
+                    <button class="menu-pannel-button" onclick="openTab('page-fun', this)">Fun Button</button>
                 </div>
             </div>
 
             <div class="MainSide-Pannel">
+                <div id="page-main" class="tab-content active">
+                    <div class="page-denomination"> <h3>Introduction</h3> </div>
+
+                    <!--<div class="introduction-image"> <img src=""> </div>-->
+
+                    <div class="introduction-text"> 
+                        <p class="welcome-title">Welcome to <span class="cool-blue">The Mateus Personal Website & Archive!</span></p>
+
+                        <p>
+                            Welcome to my digital space. This website serves as a personal archive, portfolio, and digital tribute to early 2000s web design and visual aesthetics—primarily focusing on <span class="cool-blue">Frutiger Aero</span>
+                        </p>
+
+                        <p>
+                            Here you will find my coding projects, interactive experiments, visual customizations, records, and more. Feel free to explore the tabs in the side menu :D.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div id="page-projects" class="tab-content">
+                    <div class="page-denomination"> <h3>Projects</h3> </div>
+
+                </div>
+
+                <div id="page-about" class="tab-content">
+                    <div class="page-denomination"> <h3>About Me</h3> </div>
+                </div>
+
+                <!-- Aba 4: Fun Button -->
+                <div id="page-fun" class="tab-content">
+                    <div class="page-denomination"> <h3>Fun Zone</h3> </div>
+                    
+                </div>
 
             </div>
 

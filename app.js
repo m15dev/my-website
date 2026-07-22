@@ -1,11 +1,22 @@
-const botoes = document.querySelectorAll('.menu-pannel-button');
-botoes.forEach(botao => {
-            botao.addEventListener('click', () => {
+//Funtion that updates my left pannel buttons
+function openTab(pageId, button) {
 
-                // 1. Removes the "Selected" class from all buttons
-                botoes.forEach(b => b.classList.remove('selected'));
-                
-                // 2. Adds the "Selected" from the selected button
-                botao.classList.add('selected');
-            });
-        });
+    // hides all pages fisrt
+    const pages = document.querySelectorAll('.tab-content');
+    pages.forEach(page => page.classList.remove('active')); 
+
+    // Un-Activates the buttons  
+    const buttons = document.querySelectorAll('.menu-pannel-button');
+    buttons.forEach(btn => btn.classList.remove('selected'));
+
+    // Changes to the selected page
+    const targetPage = document.getElementById(pageId);
+    if (targetPage) {
+        targetPage.classList.add('active');
+    }
+
+    // updates the button color
+    if (button) {
+        button.classList.add('selected');
+    }
+}
