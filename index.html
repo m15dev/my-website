@@ -34,36 +34,96 @@
                 <div id="page-main" class="tab-content active">
                     <div class="page-denomination"> <h3>Introduction</h3> </div>
 
-                    <!--<div class="introduction-image"> <img src=""> </div>-->
+                    <div class="introduction-image">
+                        <div class="intro-cover-text">
+                            <h2>Welcome to <span class="cool-blue">The Mateus Personal Website & Archive!</span></h2>
+                            <p>A personal portfolio and digital tribute to 2000s web aesthetics.</p>
+                        </div>
+                    </div>
 
                     <div class="introduction-text"> 
-                        <p class="welcome-title">Welcome to <span class="cool-blue">The Mateus Personal Website & Archive!</span></p>
-
                         <p>
-                            Welcome to my digital space. This website serves as a personal archive, portfolio, and digital tribute to early 2000s web design and visual aesthetics—primarily focusing on <span class="cool-blue">Frutiger Aero</span>
+                            Welcome to my digital space. This website serves as a personal archive, portfolio, and digital tribute to early 2000s web design and visual aesthetics—primarily focusing on <span class="cool-blue">Frutiger Aero</span>.
                         </p>
-
                         <p>
                             Here you will find my coding projects, interactive experiments, visual customizations, records, and more. Feel free to explore the tabs in the side menu :D.
                         </p>
-
-
                     </div>
                 </div>
 
                 <div id="page-projects" class="tab-content">
-                    <div class="page-denomination"> <h3>Projects</h3> </div>
+                    
+                    <div class="page-denomination">
+                        <h3>Projects</h3>
+                    </div>
 
+                    <div class="project-cover-container">
+                        <div class="cover-text">
+                            <h2>Welcome to my Project Archive</h2>
+                            <p>Explore my creations, code experiments, and digital tributes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card-image" style="background-image: url('GeoNet3D.png');"></div>
+
+                            <div class="project-card-content">
+                                <h4>GeoNet-3D</h4>
+                                <p>Built with Three.js for Hack Club Stardance, Geo Net 3D is an interactive space simulation that renders satellite networks in real time.</p>
+                                
+                                <a href="https://github.com/m15dev/GeoNet-3D" target="_blank" class="repo-button">
+                                    View Repository =>
+                                </a>
+                            </div>
+                        </div>
+                        <!----------------------------------------------->
+                        <div class="project-card">
+                            <div class="project-card-image" style="background-image: url('projeto1.jpg');"></div>
+
+                            <div class="project-card-content">
+                                <h4>Fuel-Share</h4>
+                                <p>Under Development</p>
+                                
+                                <a href="https://github.com/m15dev/fuel-share" target="_blank" class="repo-button">
+                                    View Repository =>
+                                </a>
+                            </div>
+                        </div>
+
+                    
+                    </div>
                 </div>
 
                 <div id="page-about" class="tab-content">
                     <div class="page-denomination"> <h3>About Me</h3> </div>
+
+                    
+                    <div class="about-me-container">
+                    <!-- Texto principal -->
+                    <div class="about-text">
+                        <h2>Hello, I'm Mateus :D</h2>
+                        <hr>
+                        <p>I'm a developer from Brazil who loves exploring code and digital nostalgia.</p>
+                        <p>I enjoy playing Music, building creative tech projects, and experimenting with new tools. Since this is one of my very first launched websites, please forgive any small glitches you might find!</p>
+                        <p>When I'm not coding, I'm usually listening to music—especially <span class="cool-blue">chiptune</span>, 8-bit tracks, and retro soundtracks.</p>
+                    </div>
+
+                </div>
                 </div>
 
-                <!-- Aba 4: Fun Button -->
                 <div id="page-fun" class="tab-content">
                     <div class="page-denomination"> <h3>Fun Zone</h3> </div>
                     
+                    <div class="dvd-container">
+                        <div class="dvd-stats">
+                            <span>Bounces: <strong id="bounce-count">0</strong></span>
+                            <span>Corner Hits: <strong id="corner-count" class="cool-blue">0</strong></span>
+                        </div>
+                        
+                        <canvas id="dvd-canvas"></canvas>
+                    </div>
+
                 </div>
 
             </div>
