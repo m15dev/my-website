@@ -1,48 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     padding:0; margin: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --sidebar-color: #0A0A0A;
+    --btn-sidebar-color: #1d1d1d; /*#131313*/
+    --txt-sidebar-color: #9c9c9c;
+    --txt-sidebar-color-hover: var(--divisor-color);
+
+    --main-color: #0A0A0A;
+    --font-main: 'Roboto Mono', monospace;
+    
+    --divisor-color: #1FD1F5;
+    --cool-blue: #1FD1F5;
+}
+
+
 html, body{
-    background-color: #0A0A0A;
+    background-color: var(--main-color);
     width: 100%; height: 100vh;     
     overflow: hidden;
 }
+
 body{
-    display: grid;
+    display: grid; font-family: var(--font-main);
     grid-template-columns: 250px 1fr;
 }
 
-
 .sidebar{
-    background-color: #0A0A0A;
-    height: 100vh;
+    background-color: var(--sidebar-color);
+    height: 100vh; display: flex; margin-top: 20px;
+    justify-content: center; font-family: var(--font-main);
+    padding-left: 25px;
 }
 
+
 .divisor{
-    margin: 20px; margin-bottom: 20px;
+    margin-top: 20px; margin-bottom: 20px;
     height: calc(100vh - 40px); width: 3px;
-    background-color: #1FD1F5;
+    background-color: var(--divisor-color);
     z-index: 10;
-    box-shadow: 0 0 10px #1FD1F5, 0 0 20px #1FD1F5;
+    box-shadow: 0 0 10px var(--divisor-color), 0 0 20px var(--divisor-color);
 }
 
 .main-contend{
-    background-color: #0A0A0A;
+    background-color: var(--main-color);
     overflow-y: auto;
 }
 
 .nav-button{
-    background-color: #131313;
+    font-family: var(--font-main);
+    background-color: var(--btn-sidebar-color); 
+    color: var(--txt-sidebar-color); border: none;
     height: 50px; width: 200px;
-    flex-direction: column;
-    justify-content: center;
+    display: inline-flex; flex-direction: column;
+    justify-content: center; align-items: flex-start;
     padding: 20px; transition:all 0.3s ease;
+    margin-bottom: 10px;
+    border: 1px solid var(--btn-sidebar-color);
 
-    clip-path: polygon(0 0, 100% 0, 100% 100% 15px 100% 0 calc(100x-15px));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15px 100%, 0 calc(100% - 15px));
 }
 
 .nav-button.active,
 .nav-button:hover {
-    color: #1FD1F5;
+    color: var(--txt-sidebar-color-hover);
 }
+.nav-button:focus{
+    color: var(--txt-sidebar-color-hover);
+    border: 1px solid var(--cool-blue);
+}
+
+.page {display: none;}
+.page.active {display: block;}

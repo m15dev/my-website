@@ -10,21 +10,54 @@
 <body>
     <!--Main Website-->
         <aside class="sidebar"> <!--Left Sidebar-->
+
             <nav class="sidebar-nav">
-                <button class="nav-button">
-                    <span></span>
-                    <span></span>
+                <button onclick="showPage('home')" class="nav-button btn1">
+                    <span>// 01</span>
+                    <span>Início</span>
+                </button>
+
+                <button onclick="showPage('about')"o class="nav-button btn2">
+                    <span>// 02</span>
+                    <span>Sobre</span>
+                </button>
+
+                <button onclick="showPage('projects')" class="nav-button btn3">
+                    <span>// 03</span>
+                    <span>Projetos</span>
+                </button>
+
+                <button onclick="showPage('others')" class="nav-button btn4">
+                    <span>// 04</span>
+                    <span>Outros</span>
                 </button>
             </nav>
 
         </aside>
 
-        <div class="divisor"></div>
+        <div class="divisor"></div> <!--Divisor Line-->
 
-        <main class="main-contend">
+        <main class="main-contend"> <!--Right side-->
+
+            <section class="page" id="home">
+                <h3>Sup im Home </h3>
+            </section>
+
+            <section class="page" id="about">
+
+            </section>
+
+            <section class="page" id="projects">
+
+            </section>
+
+            <section class="page" id="others">
+
+            </section>
 
         </main>
 
     <!--Main Website-->
+    <script src="script.js"></script>
 </body>
 </html>
